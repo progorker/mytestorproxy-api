@@ -40,6 +40,19 @@
 
 
 -------|__/-------------------------
+            FUNCTIONS
+------------------------------------
+
+1. api_testor_escape
++ MD: https://github.com/progorker/mytestorproxy-api/blob/main/function/api_testor_escape.md
++ HTML: https://progorker.github.io/mytestorproxy-api/function/api_testor_escape.html
+
+2. api_testor_unescape
++ MD: https://github.com/progorker/mytestorproxy-api/blob/main/function/api_testor_unescape.md
++ HTML: https://progorker.github.io/mytestorproxy-api/function/api_testor_unescape.html
+
+
+-------|__/-------------------------
             PROCEDURES
 ------------------------------------
 
