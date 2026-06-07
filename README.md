@@ -208,43 +208,47 @@
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_man.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_man.html
 
-39. api_testor_cell_equals
+39. api_testor_pattern
++ MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_pattern.md
++ HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_pattern.html
+
+40. api_testor_cell_equals
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_equals.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_equals.html
 
-40. api_testor_cell_not_equals
+41. api_testor_cell_not_equals
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_not_equals.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_not_equals.html
 
-41. api_testor_cell_greater_than
+42. api_testor_cell_greater_than
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_greater_than.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_greater_than.html
 
-42. api_testor_cell_not_greater_than
+43. api_testor_cell_not_greater_than
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_not_greater_than.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_not_greater_than.html
 
-43. api_testor_cell_less_than
+44. api_testor_cell_less_than
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_less_than.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_less_than.html
 
-44. api_testor_cell_not_less_than
+45. api_testor_cell_not_less_than
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_not_less_than.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_not_less_than.html
 
-45. api_testor_cell_same
+46. api_testor_cell_same
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_same.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_same.html
 
-46. api_testor_cell_not_same
+47. api_testor_cell_not_same
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_not_same.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_not_same.html
 
-47. api_testor_cell_contains
+48. api_testor_cell_contains
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_contains.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_contains.html
 
-48. api_testor_cell_not_contains
+49. api_testor_cell_not_contains
 + MD: https://github.com/progorker/mytestorproxy-api/blob/main/procedure/api_testor_cell_not_contains.md
 + HTML: https://progorker.github.io/mytestorproxy-api/procedure/api_testor_cell_not_contains.html
 
