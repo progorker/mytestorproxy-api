@@ -1,6 +1,8 @@
 <html>
 <head>
   <title>[procedure] api_testor_option -:- API References of myTestorProxy</title>
+  <script src="/jquery-4.0.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <style>
 body {
   margin: 0px;
@@ -56,8 +58,8 @@ body {
   width: 1px;
   height: 1px;
   position: absolute;
-  top: 20px;
-  left: -30px;
+  top: 5px;
+  left: -20px;
 }
 
 .dtt-page-counter div {
@@ -68,19 +70,89 @@ body {
   height: 14px;
   padding: 5px;
   text-align: left; 
+  cursor: pointer;
+  cursor: hand;
 }
 
 .dtt-grey {
   color: grey;
 }
+
+#dtt-minute {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#dtt-second {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#page-s .dtt-result {
+  border: dashed 2px gainsboro;
+  border-radius: 10px;
+  background-color: white-smoke;
+}
+
+#page-s .dtt-script {
+  border: dashed 2px gainsboro;
+}
   </style>
+  <script>
+function g_load() {
+  $(window).resize( function() {
+    g_resize();
+  } );
+  g_resize();
+  g_show_page( 'o' );
+}
+
+function g_show_page( code ) {
+  $('.dtt-cover').hide();
+  $('#page-' + code).show();
+}
+
+function g_resize() {
+  let sw = $(window).width();
+  let sh = $(window).height();
+  $('body').width( sw - 5 );
+  $('body').height( sh - 5 );
+  $('body').css( 'overflow', 'hidden' );
+  $('.dtt-page').width( sw - 40 );
+  $('.dtt-page').height( sh - 15 );
+  $('.dtt-page').css( 'margin', '5px 0px 5px 25px' );
+  $('.dtt-page').css( 'overflowX', 'hidden' );
+  $('.dtt-page').css( 'overflowY', 'scroll' );
+  $('.dtt-page-counter-cover').width( sw - 40 );
+  $('.dtt-page-inner').width( sw - 40 - 35 );
+  $('.dtt-page-inner').css( 'minHeight', (sh - 15) + 'px');
+  $('#page-o .dtt-page-inner').css( 'minHeight', '9200px');
+  $('#page-o .dtt-page-inner').css( 'minWidth', '640px');
+  if ( sw <= 640 ) {
+    $('.dtt-page').css( 'overflowX', 'auto');
+  } else {
+    $('.dtt-page').css( 'overflowX', 'hidden');
+  }
+  $('.dtt-page-inner').css( 'border', 'dotted 2px gainsboro' );
+  $('.dtt-page-inner').css( 'padding', '5px' );
+  $('#page-s .dtt-script').width( sw - 40 - 35 - 15 + 10 );
+  $('#page-s .dtt-script').height( parseInt( ( sh - 15 - 15 - 15 ) / 2 ) - 10 );
+  $('#page-s .dtt-result').width( sw - 40 - 35 - 15 + 10 );
+  $('#page-s .dtt-result').height( parseInt( ( sh - 15 - 15 - 15 ) / 2 ) - 10 );
+  $('#page-s .dtt-page-inner').height( sh - 15 - 15 - 10 );
+  $('#page-s .dtt-result').css( 'marginTop', '10px' );
+  $('#page-s .dtt-page-inner').css( 'minHeight', (sh - 15 - 15 - 15) + 'px');
+  $('#page-s .dtt-page').css( 'overflowY', 'hidden' );
+}
+  </script>
 </head>
-<body>
-  <div class="dtt-page-counter-cover"><div class="dtt-page-counter-inner"><div style="top: 10px" class="dtt-page-counter"><div>1</div></div></div></div>
-  <div class="dtt-page"><div class="dtt-page-inner">=============================_============
-  _ __ _ _ ___  __ _ ___ _ _| |_____ _ _ 
- | '_ \ '_/ _ \/ _` / _ \ '_| / / -_) '_|
- | .__/_| \___/\__, \___/_| |_\_\___|_|  
+<body onload="g_load()">
+  <div id="page-o" class="dtt-cover">
+  <div class="dtt-page-counter-cover"><div class="dtt-page-counter-inner"><div style="top: 5px" class="dtt-page-counter" onclick="g_show_page('o');"><div>&nbsp;O</div></div></div></div>
+  <div class="dtt-page"><div class="dtt-page-inner">====  <a target="_blank" href="https://github.com/progorker" style="text-decoration: none;">github.com/progorker</a>  =_============
+  _ __ _ _ ___  __ _ ___ _ _| |_____ _ _  
+ | '_ \ '_/ _ \/ _` / _ \ '_| / / -_) '_| 
+ | .__/_| \___/\__, \___/_| |_\_\___|_|   
 =|_|===========|___/======================
     API References of myTestorProxy
            ----- oOo -----
@@ -106,7 +178,6 @@ procedure mytestorproxy.api_testor_option (
 
 $) set @v_token = '_'; call mytestorproxy.api_testor_login( @v_token, 'mytestor', 'rzutomqahegpnyx' ); select @v_token;
 
-  </div><div class="dtt-page-inner" style="border-left: dashed 2px gainsboro; width: 95mm; padding-left: 5px;">
     ----------------------------
 
 +----------------------------------+
@@ -128,11 +199,8 @@ $) set @v_case_id = -1; set @v_suite_id = -1; call mytestorproxy.api_testor_suit
 +------------+-------------+
 
     ----------------------------
-    
-  </div></div>
 
-  <div class="dtt-page-counter-cover"><div class="dtt-page-counter-inner"><div style="top: 10px" class="dtt-page-counter"><div>2</div></div></div></div>
-  <div class="dtt-page"><div class="dtt-page-inner">$) set @v_data = '/bioogr/works/mysterry'; call mytestorproxy.api_testor_option( '8003c6c90940e847a8e01897b4a93e4d', 1, @v_data, 'src_dir', false ); set @v_data = null; call mytestorproxy.api_testor_option( '8003c6c90940e847a8e01897b4a93e4d', 1, @v_data, 'src_dir', false ); select @v_data;
+$) set @v_data = '/bioogr/works/mysterry'; call mytestorproxy.api_testor_option( '8003c6c90940e847a8e01897b4a93e4d', 1, @v_data, 'src_dir', false ); set @v_data = null; call mytestorproxy.api_testor_option( '8003c6c90940e847a8e01897b4a93e4d', 1, @v_data, 'src_dir', false ); select @v_data;
 
     ----------------------------
 
@@ -144,11 +212,12 @@ $) set @v_case_id = -1; set @v_suite_id = -1; call mytestorproxy.api_testor_suit
 
     ----------------------------
 
-    
-  </div><div class="dtt-page-inner" style="border-left: dashed 2px gainsboro; width: 95mm; padding-left: 5px;">
-    
+
+
+
     
   </div></div>
+  </div>
 
 </body>
 </html>
